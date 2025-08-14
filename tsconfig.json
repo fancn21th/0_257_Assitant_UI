@@ -19,9 +19,30 @@
       }
     ],
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"],
+      "@assistant-ui/react": ["../assistant-ui/packages/react/src"],
+      "@assistant-ui/react/*": ["../assistant-ui/packages/react/src/*"],
+      "@assistant-ui/react-ai-sdk": [
+        "../assistant-ui/packages/react-ai-sdk/src"
+      ],
+      "@assistant-ui/react-ai-sdk/*": [
+        "../assistant-ui/packages/react-ai-sdk/src/*"
+      ],
+      "assistant-stream": ["../assistant-ui/packages/assistant-stream/src"],
+      "assistant-stream/*": ["../assistant-ui/packages/assistant-stream/src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "../assistant-ui/packages/react/src/**/*.ts",
+    "../assistant-ui/packages/react/src/**/*.tsx",
+    "../assistant-ui/packages/react-ai-sdk/src/**/*.ts",
+    "../assistant-ui/packages/react-ai-sdk/src/**/*.tsx",
+    "../assistant-ui/packages/assistant-stream/src/**/*.ts",
+    "../assistant-ui/packages/assistant-stream/src/**/*.tsx"
+  ],
   "exclude": ["node_modules"]
 }
